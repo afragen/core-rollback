@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '18a88ba1a0467c6fbbea480a3f6f64298055f993',
+    'reference' => '4980d0fbe30308df3cd193945f8a0e42d2265376',
     'name' => 'afragen/core-rollback',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '18a88ba1a0467c6fbbea480a3f6f64298055f993',
+      'reference' => '4980d0fbe30308df3cd193945f8a0e42d2265376',
     ),
   ),
 );

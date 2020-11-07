@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Core Rollback plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Core Rollback 0.1.0\n"
+"Project-Id-Version: Core Rollback 0.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/core-rollback\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-11-07T17:15:37+00:00\n"
+"POT-Creation-Date: 2020-11-07T20:32:19+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: core-rollback\n"
@@ -34,20 +34,24 @@ msgstr ""
 msgid "Core Versions"
 msgstr ""
 
-#: src/Settings.php:53
+#: src/Settings.php:54
+msgid "<strong>WARNING:</strong> Downgrading WordPress Core may leave your site in an unusable state."
+msgstr ""
+
+#: src/Settings.php:56
 msgid "Rollback to one of most recent WordPress core versions."
 msgstr ""
 
-#: src/Settings.php:65
-#: src/Settings.php:79
+#: src/Settings.php:68
+#: src/Settings.php:82
 msgid "Rollback Core"
 msgstr ""
 
-#: src/Settings.php:66
+#: src/Settings.php:69
 msgctxt "Menu item"
 msgid "Rollback Core"
 msgstr ""
 
-#: src/Settings.php:91
+#: src/Settings.php:94
 msgid "Re-install"
 msgstr ""

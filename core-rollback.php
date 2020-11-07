@@ -17,6 +17,7 @@
  * License:           MIT
  * Domain Path:       /languages
  * Text Domain:       core-rollback
+ * Network:           true
  * GitHub Plugin URI: https://github.com/afragen/core-rollback
  * Primary Branch:    main
  * Requires at least: 4.0

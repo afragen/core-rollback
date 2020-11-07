@@ -19,7 +19,7 @@
  * Text Domain:       core-rollback
  * GitHub Plugin URI: https://github.com/afragen/core-rollback
  * Primary Branch:    main
- * Requires at least: 5.2
+ * Requires at least: 4.0
  * Requires PHP:      5.4
  */
 

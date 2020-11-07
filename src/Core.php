@@ -48,8 +48,10 @@ class Core {
 			$body     = \json_decode( $body );
 			$offers   = $body->offers;
 			foreach ( $offers as $offer ) {
-				$offer->response             = 'latest';
-				$versions[ $offer->version ] = $offer;
+				if ( version_compare( $offer->version, '4.0', '>=' ) ) {
+					$offer->response             = 'latest';
+					$versions[ $offer->version ] = $offer;
+				}
 			}
 			\set_site_transient( 'core_rollback', $versions, DAY_IN_SECONDS );
 		}

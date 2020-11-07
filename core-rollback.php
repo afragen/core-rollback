@@ -28,5 +28,12 @@ namespace Fragen\Rollback;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+add_action(
+	'init',
+	function() {
+		load_plugin_textdomain( 'core-rollback' );
+	}
+);
+
 ( new Settings() )->load_hooks();
 ( new Core() )->load_hooks();

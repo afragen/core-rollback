@@ -43,12 +43,6 @@ class Core {
 	public function get_core_versions() {
 		$versions = \get_site_transient( 'fragen_core_rollback' );
 		if ( ! $versions ) {
-			/**
-			 * Filter the locale.
-			 *
-			 * @since 1.0.0
-			 */
-			$locale   = apply_filters( 'core_rollback_locale', get_locale() );
 			$response = wp_remote_get( "https://api.wordpress.org/core/version-check/1.7/?locale={$locale}" );
 			$body     = wp_remote_retrieve_body( $response );
 			$body     = \json_decode( $body );

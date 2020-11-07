@@ -27,6 +27,5 @@ namespace Fragen\Rollback;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-
 ( new Settings() )->load_hooks();
 ( new Core() )->load_hooks();

@@ -135,7 +135,7 @@ class Settings {
 			$options = isset( $_POST['versions'] ) ? wp_unslash( $_POST['versions'] ) : [];
 			// phpcs:enable
 
-			set_site_transient( '_core_rollback', $options, 60 );
+			set_site_transient( '_core_rollback', $options, 5 );
 			wp_safe_redirect( \network_admin_url( 'update-core.php?force-check=1' ) );
 			exit;
 		}

@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '4980d0fbe30308df3cd193945f8a0e42d2265376',
+    'reference' => 'bd74cde80a7fcf34372d95562a9fac3988e276a0',
     'name' => 'afragen/core-rollback',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '4980d0fbe30308df3cd193945f8a0e42d2265376',
+      'reference' => 'bd74cde80a7fcf34372d95562a9fac3988e276a0',
     ),
   ),
 );

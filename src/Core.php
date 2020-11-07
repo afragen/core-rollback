@@ -43,6 +43,7 @@ class Core {
 	public function get_core_versions() {
 		$versions = \get_site_transient( 'core_rollback' );
 		if ( ! $versions ) {
+			$locale   = get_locale();
 			$response = wp_remote_get( "https://api.wordpress.org/core/version-check/1.7/?locale={$locale}" );
 			$body     = wp_remote_retrieve_body( $response );
 			$body     = \json_decode( $body );

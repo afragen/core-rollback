@@ -50,6 +50,9 @@ class Settings {
 	 * @return void
 	 */
 	public function print_core_rollback() {
+		echo '<div class="notice notice-warning fade">';
+		echo '<p>' . wp_kses_post( __( '<strong>WARNING:</strong> Downgrading WordPress Core may leave your site in an unusable state.', 'core-rollback' ) ) . '</p>';
+		echo '</div>';
 		esc_html_e( 'Rollback to one of most recent WordPress core versions.', 'core-rollback' );
 	}
 

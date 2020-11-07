@@ -29,8 +29,8 @@ class Settings {
 	public function load_hooks() {
 		add_action( 'admin_init', [ $this, 'add_settings' ] );
 		add_action( is_multisite() ? 'network_admin_menu' : 'admin_menu', [ $this, 'add_plugin_menu' ] );
-		add_action( 'network_admin_edit_rollback', [ $this, 'update_settings' ] );
 		add_action( 'admin_init', [ $this, 'update_settings' ] );
+		add_action( 'network_admin_edit_rollback', [ $this, 'update_settings' ] );
 	}
 
 	/**
@@ -40,8 +40,19 @@ class Settings {
 	 */
 	public function add_settings() {
 		register_setting( 'rollback_settings', 'rollback_settings' );
-		add_settings_section( 'core', null, [ $this, 'print_core_rollback' ], 'rollback' );
-		add_settings_field( 'core_versions', __( 'Core Versions', 'core-rollback' ), [ $this, 'version_dropdown' ], 'rollback', 'core' );
+		add_settings_section(
+			'core',
+			null,
+			[ $this, 'print_core_rollback' ],
+			'rollback'
+		);
+		add_settings_field(
+			'core_versions',
+			__( 'Core Versions', 'core-rollback' ),
+			[ $this, 'version_dropdown' ],
+			'rollback',
+			'core'
+		);
 	}
 
 	/**
@@ -77,28 +88,19 @@ class Settings {
 	 * Options page callback.
 	 */
 	public function create_admin_page() {
-		$action = is_multisite() ? 'edit.php?action=rollback' : 'options.php';
-		echo '<div class="wrap">';
-		echo '<h2>' . esc_html__( 'Rollback Core', 'core-rollback' ) . '</h2>';
-		$this->update_form();
-		echo '</div>';
-	}
-
-	/**
-	 * Create update form.
-	 *
-	 * @return void
-	 */
-	public function update_form() {
+		$action      = is_multisite() ? 'edit.php?action=rollback' : 'options.php';
 		$form_action = 'update-core.php?action=do-core-reinstall';
 		$submit      = __( 'Re-install', 'core-rollback' );
 
+		echo '<div class="wrap">';
+		echo '<h2>' . esc_html__( 'Rollback Core', 'core-rollback' ) . '</h2>';
 		echo '<form method="post" action="' . esc_attr( $form_action ) . '" name="upgrade" class="upgrade">';
 		wp_nonce_field( 'core_rollback' );
 		settings_fields( 'rollback_settings' );
 		do_settings_sections( 'rollback' );
 		submit_button( $submit );
 		echo '</form>';
+		echo '</div>';
 	}
 
 	/**

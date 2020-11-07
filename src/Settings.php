@@ -136,7 +136,7 @@ class Settings {
 			// phpcs:enable
 
 			set_site_transient( '_core_rollback', $options, 60 );
-			wp_safe_redirect( \network_admin_url( 'update-core.php' ) );
+			wp_safe_redirect( \network_admin_url( 'update-core.php?force-check=1' ) );
 			exit;
 		}
 	}

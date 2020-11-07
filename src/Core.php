@@ -41,7 +41,7 @@ class Core {
 	 * @return array Array of versions and downloads.
 	 */
 	public function get_core_versions() {
-		$versions = \get_site_transient( 'fragen_core_rollback' );
+		$versions = \get_site_transient( 'core_rollback' );
 		if ( ! $versions ) {
 			$response = wp_remote_get( "https://api.wordpress.org/core/version-check/1.7/?locale={$locale}" );
 			$body     = wp_remote_retrieve_body( $response );
@@ -51,7 +51,7 @@ class Core {
 				$offer->response             = 'latest';
 				$versions[ $offer->version ] = $offer;
 			}
-			\set_site_transient( 'fragen_core_rollback', $versions, DAY_IN_SECONDS );
+			\set_site_transient( 'core_rollback', $versions, DAY_IN_SECONDS );
 		}
 
 		return $versions;

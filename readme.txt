@@ -10,9 +10,7 @@ Tested up to: 5.6
 
 Seamless rollback of WordPress Core in your current locale using the Core Update API and Core Update methods.
 
-## Description
-
-Seamless rollback of WordPress Core in your current locale using the Core Update API and Core Update methods.
+## Usage
 
 From the Tools menu select `Rollback Core`, select the version you wish to rollback to from the dropdown and click `Re-install`. You will be directed to the `update-core.php` page where you should see a button to `Re-install Now` your specified version.
 

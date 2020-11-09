@@ -45,9 +45,12 @@ class Core {
 		if ( ! $versions ) {
 			$locale   = get_locale();
 			$response = wp_remote_get( "https://api.wordpress.org/core/version-check/1.7/?locale={$locale}" );
-			$body     = wp_remote_retrieve_body( $response );
-			$body     = \json_decode( $body );
-			$offers   = $body->offers;
+			if ( is_wp_error( $response ) ) {
+				return [];
+			}
+			$body   = wp_remote_retrieve_body( $response );
+			$body   = \json_decode( $body );
+			$offers = $body->offers;
 			foreach ( $offers as $offer ) {
 				if ( version_compare( $offer->version, '4.0', '>=' ) ) {
 					$offer->response             = 'latest';
@@ -110,6 +113,9 @@ class Core {
 		$args['_core_rollback'] = true;
 
 		$response = wp_remote_get( $url, $args );
+		if ( is_wp_error( $response ) ) {
+			return $result;
+		}
 		if ( isset( $args['_rollback_version'] ) ) {
 			$rollback_version = sanitize_text_field( $args['_rollback_version'] );
 			$response         = $this->set_rollback( $response, $rollback_version );

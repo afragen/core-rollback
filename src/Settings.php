@@ -51,7 +51,8 @@ class Settings {
 			__( 'Core Versions', 'core-rollback' ),
 			[ $this, 'version_dropdown' ],
 			'rollback',
-			'core'
+			'core',
+			[ 'core' => new Core() ]
 		);
 	}
 
@@ -106,13 +107,12 @@ class Settings {
 	/**
 	 * Make version dropdown.
 	 *
+	 * @param  array $args Array of args, [ 'core' => new Core() ].
+	 *
 	 * @return void
 	 */
-	public function version_dropdown() {
-		$core     = ( new Core() );
-		$versions = $core::$core_versions;
-
-		$items = array_keys( $versions );
+	public function version_dropdown( $args ) {
+		$items = array_keys( $args['core']::$core_versions );
 		echo "<select id='core_dropdown' name='versions[core_dropdown]'>";
 		foreach ( $items as $item ) {
 			echo '<option value="' . esc_attr( $item ) . '">' . esc_attr( $item ) . '</option>';

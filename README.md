@@ -9,7 +9,7 @@
 
 ## Description
 
-Seamless rollback of WordPress Core in your current locale using the Core Update API and Core Update methods.
+Seamless rollback of WordPress Core to the current releases using the Core Update API and Core update methods.
 
 ## Usage
 

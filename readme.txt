@@ -8,7 +8,7 @@ Requires at least: 4.0
 Stable tag: main
 Tested up to: 5.6
 
-Seamless rollback of WordPress Core in your current locale using the Core Update API and Core Update methods.
+Seamless rollback of WordPress Core to the current releases using the Core Update API and Core update methods.
 
 ## Usage
 

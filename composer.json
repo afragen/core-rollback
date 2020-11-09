@@ -4,7 +4,9 @@
     "type": "wordpress-plugin",
     "keywords": [
         "core",
-        "rollback"
+        "rollback",
+        "downgrade",
+        "upgrade"
     ],
     "license": "MIT",
     "authors": [

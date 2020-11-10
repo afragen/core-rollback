@@ -1,4 +1,5 @@
 {
     "packages": [],
-    "dev": true
+    "dev": true,
+    "dev-package-names": []
 }

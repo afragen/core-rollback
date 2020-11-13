@@ -14,7 +14,7 @@ Refer to https://api.wordpress.org/core/stable-check/1.0/
 
 ## Usage
 
-From the Tools menu select `Rollback Core`, select the version you wish to rollback to from the dropdown and click `Re-install`. You will be directed to the `update-core.php` page where you should see a button to `Re-install Now` your specified version.  If you move away from the `update-core.php` page before clicking the `Re-install Now` button you will have 15 seconds to return and complete the process or you will need to start over.
+From the Tools menu select `Rollback Core`, select the version you wish to rollback to from the dropdown and click `Rollback`. You will be directed to the `update-core.php` page where you should see a button to `Re-install Now` your specified version.  If you move away from the `update-core.php` page before clicking the `Re-install Now` button you will have 15 seconds to return and complete the process or you will need to start over.
 
 In multisite use the Settings menu.
 

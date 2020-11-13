@@ -91,7 +91,7 @@ class Settings {
 	public function create_admin_page() {
 		$action      = is_multisite() ? 'edit.php?action=rollback' : 'options.php';
 		$form_action = 'update-core.php?action=do-core-reinstall';
-		$submit      = __( 'Re-install', 'core-rollback' );
+		$submit      = __( 'Rollback', 'core-rollback' );
 
 		echo '<div class="wrap">';
 		echo '<h2>' . esc_html__( 'Rollback Core', 'core-rollback' ) . '</h2>';

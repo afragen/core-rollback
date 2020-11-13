@@ -12,7 +12,7 @@
  * Plugin Name:       Core Rollback
  * Plugin URI:        https://github.com/afragen/core-rollback
  * Description:       Seamless rollback of WordPress Core to latest release or any outdated, secure release using the Core Update API and core update methods.
- * Version:           0.4.4
+ * Version:           0.4.5
  * Author:            Andy Fragen
  * License:           MIT
  * Domain Path:       /languages

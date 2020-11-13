@@ -99,7 +99,7 @@ class Core {
 	 * @param array  $args   Array of filter args.
 	 * @param string $url    URL from filter.
 	 *
-	 * @return /stdClass $response Output from wp_remote_get().
+	 * @return \stdClass $response Output from wp_remote_get().
 	 */
 	public function filter_http_request( $result, $args, $url ) {
 		if ( $result || isset( $args['_core_rollback'] ) ) {

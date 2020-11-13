@@ -68,9 +68,9 @@ class Settings {
 		esc_html_e( 'Rollback to latest release or any outdated, secure release version of WordPress Core.', 'core-rollback' );
 
 		echo '<ol>';
-		echo ( '<li>' . esc_html__( 'Select the rollback version from the dropdown menu.', 'core-rollback' ) . '</li>' );
+		echo( '<li>' . esc_html__( 'Select the rollback version from the dropdown menu.', 'core-rollback' ) . '</li>' );
 		echo( '<li>' . esc_html__( 'Click the `Rollback` button. You will be automatically re-directed to the `update-core.php` page.', 'core-updater' ) . '</li>' );
-		echo ( '<li>' . esc_html__( 'Use the `Re-install` button to rollback to the selected version.', 'core-rollback' ) . '</li>' );
+		echo( '<li>' . esc_html__( 'Use the `Re-install` button to rollback to the selected version.', 'core-rollback' ) . '</li>' );
 		echo '</ol>';
 	}
 

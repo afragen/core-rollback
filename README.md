@@ -15,15 +15,13 @@ Refer to https://api.wordpress.org/core/stable-check/1.0/
 
 ## Usage
 
-From the Tools menu select `Rollback Core`, select the version you wish to rollback to from the dropdown and click `Rollback`. You will be directed to the `update-core.php` page where you should see a button to `Re-install Now` your specified version. If you move away from the `update-core.php` page before clicking the `Re-install Now` button you will have 15 seconds to return and complete the process or you will need to start over.
+From the Tools menu select `Rollback Core`, select the version you wish to rollback to from the dropdown and click `Rollback`. You will be directed to the `update-core.php` page where you should see a button to `Re-install` your specified version. If you move away from the `update-core.php` page before clicking the `Re-install` button you will have 15 seconds to return and complete the process or you will need to start over.
 
 In multisite use the Settings menu.
 
 **WARNING:** Downgrading WordPress Core may leave your site in an unusable state requiring a complete reinstall or a forced reinstall using WP-CLI, `wp core update --force --version=5.5.3`. It may also leave your site broken due to a plugin or theme incompatibility. **Use at your own risk.**
 
 Rollbacks use your current locale.
-
-Core version check must run to display the `Re-install Now` link. If it doesn't show it's not a plugin error. Just click the `Check Again` button/link.
 
 PRs are welcome.
 

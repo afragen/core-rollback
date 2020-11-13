@@ -1,4 +1,5 @@
 [ unreleased ]
+* updated instructions, etc
 * add assets, screenshots, banners, icon
 * add `readme.txt` and clean up `create_admin_page()`
 * add warning notice to settings

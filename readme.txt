@@ -6,7 +6,7 @@ Tags: core, rollback, downgrade, upgrade
 License: MIT
 Requires PHP: 5.6
 Requires at least: 4.0
-Stable tag: main
+Stable tag: 1.0.0
 Tested up to: 5.6
 
 Seamless rollback of WordPress Core to latest release or any outdated, secure release using the Core Update API and core update methods. Only latest release and outdated, secure releases are offered.
@@ -32,3 +32,14 @@ PRs are welcome.
 3. Re-install Now button for rollback
 
 ## Changelog
+
+#### 1.0.0 / 2020-11-17
+* initial release to dot org repository
+* add `Class Bootstrap` to intiate process
+* updated instructions, etc
+* add assets, screenshots, banners, icon
+* add `readme.txt` and clean up `create_admin_page()`
+* add warning notice to settings
+* add `force-check` query arg to redirect to more consistently display the `Re-install Now` button.
+* limit rollbacks to WP > 4.0, I found some non-recoverable issue in my local testing
+* initial release

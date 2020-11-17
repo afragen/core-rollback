@@ -1,4 +1,7 @@
 [ unreleased ]
+
+#### 1.0.0 / 2020-11-17
+* initial release to dot org repository
 * add `Class Bootstrap` to intiate process
 * updated instructions, etc
 * add assets, screenshots, banners, icon

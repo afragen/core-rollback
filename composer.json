@@ -1,6 +1,6 @@
 {
     "name": "afragen/core-rollback",
-    "description": "Seamless rollback of WordPress Core to any current release using the Core Update API and core update methods.",
+    "description": "Seamless rollback of WordPress Core to latest release or any outdated, secure release using the Core Update API and core update methods.",
     "type": "wordpress-plugin",
     "keywords": [
         "core",

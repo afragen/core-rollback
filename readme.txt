@@ -1,6 +1,7 @@
 # Core Rollback
 
 Contributors: afragen
+Donate link: https://thefragens.com/github-updater-donate
 Tags: core, rollback, downgrade, upgrade
 License: MIT
 Requires PHP: 5.6
@@ -29,3 +30,5 @@ PRs are welcome.
 1. Tools menu item
 2. Rollback Core action dropdown
 3. Re-install Now button for rollback
+
+## Changelog

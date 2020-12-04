@@ -1,5 +1,7 @@
 [ unreleased ]
 
+* fix text-domain in string, thanks Alex
+
 #### 1.0.0 / 2020-11-17
 * initial release to dot org repository
 * add `Class Bootstrap` to intiate process

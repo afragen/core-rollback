@@ -1,5 +1,6 @@
 [ unreleased ]
 
+#### 1.0.1 / 2020-12-4
 * fix text-domain in string, thanks Alex
 
 #### 1.0.0 / 2020-11-17

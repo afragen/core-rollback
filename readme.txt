@@ -7,7 +7,7 @@ License: MIT
 Requires PHP: 5.6
 Requires at least: 4.0
 Stable tag: 1.0.1
-Tested up to: 5.6
+Tested up to: 5.7
 
 Seamless rollback of WordPress Core to latest release or any outdated, secure release using the Core Update API and core update methods. Only latest release and outdated, secure releases are offered.
 

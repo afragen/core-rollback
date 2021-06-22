@@ -4,3 +4,5 @@
 .gitignore export-ignore
 composer.lock export-ignore
 .svnignore export-ignore
+/.github export-ignore
+/.wordpress-org export-ignore

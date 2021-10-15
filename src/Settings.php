@@ -140,7 +140,7 @@ class Settings {
 		}
 
 		if ( isset( $_POST['option_page'] ) &&
-			'rollback_settings' === sanitize_file_name( wp_unslash( $_POST['option_page'] ) )
+			'rollback_settings' === sanitize_title_with_dashes( wp_unslash( $_POST['option_page'] ) )
 		) {
 			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 			$options = isset( $_POST['versions'] ) ? wp_unslash( $_POST['versions'] ) : [];

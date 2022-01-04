@@ -62,10 +62,19 @@ class Settings {
 	 * @return void
 	 */
 	public function print_core_rollback() {
+		global $wp_version;
+
 		echo '<div class="notice notice-warning fade">';
 		echo '<p>' . wp_kses_post( __( '<strong>WARNING:</strong> Downgrading WordPress Core may leave your site in an unusable state.', 'core-rollback' ) ) . '</p>';
 		echo '</div>';
 		esc_html_e( 'Rollback to latest release or any outdated, secure release version of WordPress Core.', 'core-rollback' );
+
+		$version = explode( '-', $wp_version );
+		if ( version_compare( $version[0], '5.9', '>=' ) && wp_get_theme()->is_block_theme() ) {
+			echo '<div class="notice notice-info fade is-dismissible">';
+			echo '<p>' . wp_kses_post( __( '<strong>INFO:</strong> Your site is currently using a block theme. Block themes require at least WordPress 5.9.', 'core-rollback' ) ) . '</p>';
+			echo '</div>';
+		}
 
 		echo '<ol>';
 		echo( '<li>' . esc_html__( 'Select the rollback version from the dropdown menu.', 'core-rollback' ) . '</li>' );

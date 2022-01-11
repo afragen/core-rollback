@@ -114,7 +114,8 @@ class Settings {
 		wp_nonce_field( 'core_rollback' );
 		settings_fields( 'rollback_settings' );
 		do_settings_sections( 'rollback' );
-		submit_button( $submit );
+		$disabled = ! empty( $this->filter_if_block_themes() ) ? '' : 'disabled';
+		submit_button( $submit, $disabled );
 		echo '</form>';
 		echo '</div>';
 	}
@@ -128,11 +129,32 @@ class Settings {
 	 */
 	public function version_dropdown( $args ) {
 		$items = array_keys( $args['core']::$core_versions );
-		echo "<select id='core_dropdown' name='versions[core_dropdown]'>";
-		foreach ( $items as $item ) {
-			echo '<option value="' . esc_attr( $item ) . '">' . esc_attr( $item ) . '</option>';
+		if ( ! empty( $this->filter_if_block_themes() ) ) {
+			echo "<select id='core_dropdown' name='versions[core_dropdown]'>";
+			foreach ( $items as $item ) {
+				echo '<option value="' . esc_attr( $item ) . '">' . esc_attr( $item ) . '</option>';
+			}
+			echo '</select>';
 		}
-		echo '</select>';
+	}
+
+	/**
+	 * Return array of core versions compatible with block themes.
+	 *
+	 * @return array
+	 */
+	private function filter_if_block_themes() {
+		$core  = new Core();
+		$items = array_keys( $core::$core_versions );
+		if ( wp_get_theme()->is_block_theme() ) {
+			$items = array_filter(
+				$items,
+				function( $item ) {
+					return version_compare( $item, '5.9', '>=' );
+				}
+			);
+		}
+		return $items;
 	}
 
 	/**

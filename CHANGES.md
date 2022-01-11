@@ -1,5 +1,8 @@
 [ unreleased ]
 
+#### 1.2.0 / 2022-01-10
+* add method to return array of block capable WP versions for rollback
+
 #### 1.1.2 / 2022-01-10
 * add notice if currently using block theme, thanks @costdev
 

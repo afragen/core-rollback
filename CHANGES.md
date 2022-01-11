@@ -1,5 +1,8 @@
 [ unreleased ]
 
+#### 1.2.2 / 2022-01-11
+* need to use `method_exists` in check to properly function
+
 #### 1.2.1 / 2022-01-11
 * add `function_exists( 'is_block_theme' )` check to avoid fatal
 

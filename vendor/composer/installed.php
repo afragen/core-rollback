@@ -1,24 +1,23 @@
-<?php return array (
-  'root' => 
-  array (
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
-    'aliases' => 
-    array (
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'type' => 'wordpress-plugin',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => '3c0cb2ae170204af8e0cdea117552c0af78e8599',
+        'name' => 'afragen/core-rollback',
+        'dev' => false,
     ),
-    'reference' => '07015a44f2c97f279fdc27d3b298b3c99760e323',
-    'name' => 'afragen/core-rollback',
-  ),
-  'versions' => 
-  array (
-    'afragen/core-rollback' => 
-    array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '07015a44f2c97f279fdc27d3b298b3c99760e323',
+    'versions' => array(
+        'afragen/core-rollback' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'wordpress-plugin',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => '3c0cb2ae170204af8e0cdea117552c0af78e8599',
+            'dev_requirement' => false,
+        ),
     ),
-  ),
 );

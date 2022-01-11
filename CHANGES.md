@@ -1,5 +1,8 @@
 [ unreleased ]
 
+#### 1.2.1 / 2022-01-11
+* add `function_exists( 'is_block_theme' )` check to avoid fatal
+
 #### 1.2.0 / 2022-01-10
 * add method to return array of block capable WP versions for rollback
 

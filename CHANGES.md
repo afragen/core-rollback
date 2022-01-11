@@ -1,4 +1,5 @@
 [ unreleased ]
+* proper nonce verification of settings page
 
 #### 1.2.3 / 2022-01-11
 * I suck and so do typos

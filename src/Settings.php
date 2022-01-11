@@ -41,7 +41,7 @@ class Settings {
 	public function add_settings() {
 		register_setting( 'rollback_settings', 'rollback_settings' );
 		add_settings_section(
-			'core',
+			'core_rollback',
 			null,
 			[ $this, 'print_core_rollback' ],
 			'rollback'
@@ -51,7 +51,7 @@ class Settings {
 			__( 'Core Releases', 'core-rollback' ),
 			[ $this, 'version_dropdown' ],
 			'rollback',
-			'core',
+			'core_rollback',
 			[ 'core' => new Core() ]
 		);
 	}

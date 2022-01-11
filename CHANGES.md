@@ -1,5 +1,8 @@
 [ unreleased ]
 
+#### 1.1.2 / 2022-01-10
+* add notice if currently using block theme, thanks @costdev
+
 #### 1.1.1 / 2021-10-14
 * use `sanitize_title_with_dashes()` as `sanitize_file_name()` maybe have attached filter that changes output
 

@@ -165,7 +165,11 @@ class Settings {
 	 * @link http://benohead.com/wordpress-network-wide-plugin-settings/
 	 */
 	public function update_settings() {
-		// phpcs:disable WordPress.Security.NonceVerification.Missing
+		// Exit if improper privileges.
+		if ( isset( $_POST['_wpnonce'] ) && ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['_wpnonce'] ) ), 'rollback_settings-options' ) ) {
+			return;
+		}
+
 		if ( ! isset( $_POST['_wp_http_referer'] ) ) {
 			return false;
 		}

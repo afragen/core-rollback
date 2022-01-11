@@ -146,7 +146,7 @@ class Settings {
 	private function filter_if_block_themes() {
 		$core  = new Core();
 		$items = array_keys( $core::$core_versions );
-		if ( fmethod_exists( 'WP_Theme', 'is_block_theme' ) && wp_get_theme()->is_block_theme() ) {
+		if ( method_exists( 'WP_Theme', 'is_block_theme' ) && wp_get_theme()->is_block_theme() ) {
 			$items = array_filter(
 				$items,
 				function( $item ) {

@@ -1,5 +1,8 @@
 [ unreleased ]
 
+#### 1.2.3 / 2022-01-11
+* I suck and so do typos
+
 #### 1.2.2 / 2022-01-11
 * need to use `method_exists` in check to properly function
 

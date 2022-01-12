@@ -1,5 +1,6 @@
 [ unreleased ]
 * proper nonce verification of settings page
+* remove unneededd `version_compare` check for notice
 
 #### 1.2.3 / 2022-01-11
 * I suck and so do typos

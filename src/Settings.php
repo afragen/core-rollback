@@ -70,7 +70,7 @@ class Settings {
 		esc_html_e( 'Rollback to latest release or any outdated, secure release version of WordPress Core.', 'core-rollback' );
 
 		$version = explode( '-', $wp_version );
-		if ( version_compare( $version[0], '5.9', '>=' ) && method_exists( 'WP_Theme', 'is_block_theme' ) && wp_get_theme()->is_block_theme() ) {
+		if ( method_exists( 'WP_Theme', 'is_block_theme' ) && wp_get_theme()->is_block_theme() ) {
 			echo '<div class="notice notice-info fade is-dismissible">';
 			echo '<p>' . wp_kses_post( __( '<strong>INFO:</strong> Your site is currently using a block theme. Block themes require at least WordPress 5.9.', 'core-rollback' ) ) . '</p>';
 			echo '</div>';

@@ -107,6 +107,7 @@ class Settings {
 		$action      = is_multisite() ? 'edit.php?action=rollback' : 'options.php';
 		$form_action = 'update-core.php?action=do-core-reinstall';
 		$submit      = __( 'Rollback', 'core-rollback' );
+		$disabled    = ! empty( $this->filter_if_block_themes() ) ? '' : 'disabled';
 
 		echo '<div class="wrap">';
 		echo '<h2>' . esc_html__( 'Rollback Core', 'core-rollback' ) . '</h2>';
@@ -114,7 +115,6 @@ class Settings {
 		wp_nonce_field( 'core_rollback' );
 		settings_fields( 'rollback_settings' );
 		do_settings_sections( 'rollback' );
-		$disabled = ! empty( $this->filter_if_block_themes() ) ? '' : 'disabled';
 		submit_button( $submit, $disabled );
 		echo '</form>';
 		echo '</div>';

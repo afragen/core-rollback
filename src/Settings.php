@@ -112,7 +112,6 @@ class Settings {
 		echo '<div class="wrap">';
 		echo '<h2>' . esc_html__( 'Rollback Core', 'core-rollback' ) . '</h2>';
 		echo '<form method="post" action="' . esc_attr( $form_action ) . '" name="upgrade" class="upgrade">';
-		wp_nonce_field( 'core_rollback' );
 		settings_fields( 'rollback_settings' );
 		do_settings_sections( 'rollback' );
 		submit_button( $submit, $disabled );

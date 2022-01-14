@@ -1,4 +1,6 @@
 [ unreleased ]
+
+#### 1.2.4 / 2022-01-14
 * proper nonce verification of settings page
 * remove unneededd `version_compare` check for notice
 

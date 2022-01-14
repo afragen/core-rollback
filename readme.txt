@@ -6,7 +6,7 @@ Tags: core, rollback, downgrade, upgrade
 License: MIT
 Requires PHP: 5.6
 Requires at least: 4.0
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 Tested up to: 5.9
 
 Seamless rollback of WordPress Core to latest release or any outdated, secure release using the Core Update API and core update methods. Only latest release and outdated, secure releases are offered.
@@ -32,6 +32,10 @@ PRs are welcome.
 3. Re-install Now button for rollback
 
 ## Changelog
+
+#### 1.2.4 / 2022-01-14
+* proper nonce verification of settings page
+* remove unneededd `version_compare` check for notice
 
 #### 1.2.3 / 2022-01-11
 * I suck and so do typos

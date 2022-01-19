@@ -13,6 +13,8 @@ Seamless rollback of WordPress Core to latest release or any outdated, secure re
 
 Refer to https://api.wordpress.org/core/stable-check/1.0/
 
+Logo from a meme generator. [Original artwork](http://hyperboleandahalf.blogspot.com/2010/06/this-is-why-ill-never-be-adult.html) by Allie Brosh.
+
 ## Usage
 
 From the Tools menu select `Rollback Core`, select the version you wish to rollback to from the dropdown and click `Rollback`. You will be directed to the `update-core.php` page where you should see a button to `Re-install` your specified version. If you move away from the `update-core.php` page before clicking the `Re-install` button you will have 15 seconds to return and complete the process or you will need to start over.

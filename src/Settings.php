@@ -69,7 +69,6 @@ class Settings {
 		echo '</div>';
 		esc_html_e( 'Rollback to latest release or any outdated, secure release version of WordPress Core.', 'core-rollback' );
 
-		$version = explode( '-', $wp_version );
 		if ( method_exists( 'WP_Theme', 'is_block_theme' ) && wp_get_theme()->is_block_theme() ) {
 			echo '<div class="notice notice-info fade is-dismissible">';
 			echo '<p>' . wp_kses_post( __( '<strong>INFO:</strong> Your site is currently using a block theme. Block themes require at least WordPress 5.9.', 'core-rollback' ) ) . '</p>';
@@ -128,6 +127,21 @@ class Settings {
 	 */
 	public function version_dropdown( $args ) {
 		$items = array_keys( $args['core']::$core_versions );
+
+		// Filter out WP versions with deprecations and current PHP version.
+		$items = array_filter(
+			$items,
+			function( $item ) {
+				if ( version_compare( phpversion(), '5.7', '<=' ) ) {
+					return $item;
+				} elseif ( version_compare( phpversion(), '7.4', '<=' ) ) {
+					return version_compare( $item, '4.3', '>=' );
+				} else {
+					return version_compare( $item, '5.3', '>=' );
+				}
+			}
+		);
+
 		if ( ! empty( $this->filter_if_block_themes() ) ) {
 			echo "<select id='core_dropdown' name='versions[core_dropdown]'>";
 			foreach ( $items as $item ) {

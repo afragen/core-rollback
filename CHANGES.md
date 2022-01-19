@@ -1,4 +1,5 @@
 [ unreleased ]
+* filter WP versions with significant deprecation for newer PHP versions
 
 #### 1.2.4 / 2022-01-14
 * proper nonce verification of settings page

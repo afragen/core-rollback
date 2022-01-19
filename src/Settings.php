@@ -179,7 +179,7 @@ class Settings {
 	 */
 	public function update_settings() {
 		// Exit if improper privileges.
-		if ( isset( $_POST['_wpnonce'] ) && ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['_wpnonce'] ) ), 'rollback_settings-options' ) ) {
+		if ( ! isset( $_POST['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['_wpnonce'] ) ), 'rollback_settings-options' ) ) {
 			return;
 		}
 

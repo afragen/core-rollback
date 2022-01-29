@@ -132,6 +132,9 @@ class Settings {
 		$items = array_filter(
 			$items,
 			function( $item ) {
+				if ( method_exists( 'WP_Theme', 'is_block_theme' ) && wp_get_theme()->is_block_theme() ) {
+					return version_compare( $item, '5.9', '>=' );
+				}
 				if ( version_compare( phpversion(), '5.7', '<=' ) ) {
 					return $item;
 				} elseif ( version_compare( phpversion(), '7.4', '<=' ) ) {

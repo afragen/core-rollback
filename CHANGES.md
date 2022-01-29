@@ -1,5 +1,7 @@
 [ unreleased ]
-* filter WP versions with significant deprecation for newer PHP versions
+
+#### 1.3.0 / 2022-01-28
+* filter WP versions with significant deprecation notices/errors for newer PHP versions
 * add notice about limiting of rollback options for PHP versions
 
 #### 1.2.4 / 2022-01-14

@@ -67,6 +67,10 @@ class Settings {
 		echo '<div class="notice notice-warning fade">';
 		echo '<p>' . wp_kses_post( __( '<strong>WARNING:</strong> Downgrading WordPress Core may leave your site in an unusable state.', 'core-rollback' ) ) . '</p>';
 		echo '</div>';
+		echo '<div class="notice notice-info fade">';
+		echo '<p>' . wp_kses_post( __( '<strong>INFO:</strong> Depending upon your current PHP version, some versions of WordPress core will not be available for rollback.', 'core-rollback' ) ) . '</p>';
+		echo '</div>';
+
 		esc_html_e( 'Rollback to latest release or any outdated, secure release version of WordPress Core.', 'core-rollback' );
 
 		if ( method_exists( 'WP_Theme', 'is_block_theme' ) && wp_get_theme()->is_block_theme() ) {

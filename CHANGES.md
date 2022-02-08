@@ -1,4 +1,5 @@
 [ unreleased ]
+* use `sanitize_key()` for nonces
 
 #### 1.3.0 / 2022-01-28
 * filter WP versions with significant deprecation notices/errors for newer PHP versions

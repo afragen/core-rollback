@@ -1,4 +1,6 @@
 [ unreleased ]
+
+#### 1.3.1 / 2022-02-08
 * use `sanitize_key()` for nonces
 
 #### 1.3.0 / 2022-01-28

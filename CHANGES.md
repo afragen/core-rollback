@@ -1,5 +1,7 @@
 [ unreleased ]
 
+* use `wp_is_block_theme()` for check
+
 #### 1.3.1 / 2022-02-08
 * use `sanitize_key()` for nonces
 

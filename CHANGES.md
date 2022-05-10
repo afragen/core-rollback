@@ -1,5 +1,6 @@
 [ unreleased ]
 
+#### 1.3.2 / 2022-05-10
 * use `wp_is_block_theme()` for check
 
 #### 1.3.1 / 2022-02-08

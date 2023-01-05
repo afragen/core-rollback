@@ -1,4 +1,5 @@
 [ unreleased ]
+* update for PHP 8.1
 
 #### 1.3.2 / 2022-05-10
 * use `wp_is_block_theme()` for check

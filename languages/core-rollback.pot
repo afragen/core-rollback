@@ -1,17 +1,17 @@
-# Copyright (C) 2022 Andy Fragen
+# Copyright (C) 2023 Andy Fragen
 # This file is distributed under the MIT.
 msgid ""
 msgstr ""
-"Project-Id-Version: Core Rollback 1.3.0\n"
+"Project-Id-Version: Core Rollback 1.3.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/core-rollback\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-01-29T00:59:25+00:00\n"
+"POT-Creation-Date: 2023-02-06T02:54:54+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.5.0\n"
+"X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: core-rollback\n"
 
 #. Plugin Name of the plugin

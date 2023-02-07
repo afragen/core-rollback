@@ -7,7 +7,7 @@ License: MIT
 Requires PHP: 5.6
 Requires at least: 4.0
 Tested up to: 6.2
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 
 Seamless rollback of WordPress Core to latest release or any outdated, secure release using the Core Update API and core update methods. Only latest release and outdated, secure releases are offered.
 
@@ -34,6 +34,9 @@ PRs are welcome.
 3. Re-install Now button for rollback
 
 ## Changelog
+
+#### 1.3.4 / 2023-02-07
+* composer update
 
 #### 1.3.3 / 2023-02-05
 * update for PHP 8.1

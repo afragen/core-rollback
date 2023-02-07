@@ -1,5 +1,8 @@
 [ unreleased ]
 
+#### 1.3.4 / 2023-02-07
+* composer update
+
 #### 1.3.3 / 2023-02-05
 * update for PHP 8.1
 

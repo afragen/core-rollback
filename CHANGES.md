@@ -1,5 +1,7 @@
 [ unreleased ]
 
+* update rollback choices for PHP version
+
 #### 1.3.4 / 2023-02-07
 * composer update
 

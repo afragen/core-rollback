@@ -139,10 +139,8 @@ class Settings {
 				if ( function_exists( 'wp_is_block_theme' ) && wp_is_block_theme() ) {
 					return version_compare( $item, '5.9', '>=' );
 				}
-				if ( version_compare( phpversion(), '5.7', '<=' ) ) {
-					return $item;
-				} elseif ( version_compare( phpversion(), '7.4', '<=' ) ) {
-					return version_compare( $item, '4.3', '>=' );
+				if ( version_compare( phpversion(), '8.0', '<' ) ) {
+					return version_compare( $item, '4.0', '>=' );
 				} else {
 					return version_compare( $item, '5.3', '>=' );
 				}

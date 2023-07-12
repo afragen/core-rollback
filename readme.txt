@@ -5,9 +5,9 @@ Donate link: https://thefragens.com/github-updater-donate
 Tags: core, rollback, downgrade, upgrade
 License: MIT
 Requires PHP: 5.6
-Requires at least: 4.0
-Tested up to: 6.2
-Stable tag: 1.3.4
+Requires at least: 4.1
+Tested up to: 6.3
+Stable tag: 1.3.5
 
 Seamless rollback of WordPress Core to latest release or any outdated, secure release using the Core Update API and core update methods. Only latest release and outdated, secure releases are offered.
 
@@ -34,6 +34,9 @@ PRs are welcome.
 3. Re-install Now button for rollback
 
 ## Changelog
+
+#### 1.3.5 / 2023-07-12
+* update rollback choices for PHP version
 
 #### 1.3.4 / 2023-02-07
 * composer update

@@ -1,5 +1,6 @@
 [ unreleased ]
 
+#### 1.3.5 / 2023-07-12
 * update rollback choices for PHP version
 
 #### 1.3.4 / 2023-02-07

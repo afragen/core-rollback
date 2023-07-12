@@ -5,7 +5,7 @@
  * Donate link:       https://thefragens.com/github-updater-donate
  * License:           MIT
  * Requires PHP:      5.6
- * Requires at least: 4.0
+ * Requires at least: 4.1
 
 ## Description
 

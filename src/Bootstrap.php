@@ -27,15 +27,7 @@ class Bootstrap {
 	 * @return void
 	 */
 	public function run() {
-		add_action( 'init', [ $this, 'load_textdomain' ] );
 		( new Core() )->load_hooks();
 		( new Settings() )->load_hooks();
-	}
-
-	/**
-	 * Load textdomain.
-	 */
-	public function load_textdomain() {
-		load_plugin_textdomain( 'core-rollback' );
 	}
 }

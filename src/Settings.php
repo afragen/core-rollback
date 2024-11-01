@@ -135,7 +135,7 @@ class Settings {
 		// Filter out WP versions with deprecations and current PHP version.
 		$items = array_filter(
 			$items,
-			function( $item ) {
+			function ( $item ) {
 				if ( function_exists( 'wp_is_block_theme' ) && wp_is_block_theme() ) {
 					return version_compare( $item, '5.9', '>=' );
 				}
@@ -167,7 +167,7 @@ class Settings {
 		if ( function_exists( 'wp_is_block_theme' ) && wp_is_block_theme() ) {
 			$items = array_filter(
 				$items,
-				function( $item ) {
+				function ( $item ) {
 					return version_compare( $item, '5.9', '>=' );
 				}
 			);

@@ -1,4 +1,5 @@
 [ unreleased ]
+* start in `init` hook
 * add GitHub Action to generate POT
 
 #### 1.3.6 / 2024-11-01

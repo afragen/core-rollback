@@ -1,4 +1,5 @@
 [ unreleased ]
+* add GitHub Action to generate POT
 
 #### 1.3.6 / 2024-11-01
 * remove `load_plugin_textdomain()`

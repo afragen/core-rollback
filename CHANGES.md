@@ -1,4 +1,6 @@
 [ unreleased ]
+* return rollback offer with `update_core` transient
+* update POT GitHub Action
 
 #### 1.3.7 / 2024-12-02
 * start in `init` hook

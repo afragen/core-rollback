@@ -2,7 +2,7 @@
 # This file is distributed under the MIT.
 msgid ""
 msgstr ""
-"Project-Id-Version: Core Rollback 1.3.7\n"
+"Project-Id-Version: Core Rollback 1.4.0\n"
 "Report-Msgid-Bugs-To: https://github.com/afragen/core-rollback/issues\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"

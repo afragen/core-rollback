@@ -1,4 +1,6 @@
 [ unreleased ]
+
+#### 1.4.0 / 2025-11-17
 * return rollback offer with `update_core` transient
 * update POT GitHub Action
 

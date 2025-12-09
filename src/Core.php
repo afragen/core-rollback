@@ -176,6 +176,12 @@ class Core {
 	 * @return stdClass
 	 */
 	public function add_rollback_offer( $transient ) {
+		if ( ! $transient ) {
+			$transient                  = new stdClass();
+			$transient->last_checked    = time();
+			$transient->version_checked = function_exists( 'wp_get_wp_version' ) ? wp_get_wp_version() : get_bloginfo( 'version' );
+			$transient->updates         = [];
+		}
 		$rollback = get_site_transient( '_core_rollback' );
 		$version  = $rollback['core_dropdown'] ?? '';
 		$offers   = get_site_transient( '_core_rollback_offers' );

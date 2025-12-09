@@ -1,4 +1,5 @@
 [ unreleased ]
+* add hardening to `get_core_versions()`
 
 #### 1.4.0 / 2025-11-17
 * return rollback offer with `update_core` transient

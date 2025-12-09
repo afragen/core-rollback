@@ -1,4 +1,6 @@
 [ unreleased ]
+
+#### 1.4.1 / 2025-12-09
 * add hardening to `get_core_versions()`
 * account for `update_core` transient as `false`
 

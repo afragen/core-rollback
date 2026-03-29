@@ -53,7 +53,7 @@ class Core {
 			}
 			$body   = wp_remote_retrieve_body( $response );
 			$body   = json_decode( $body );
-			$offers = $body->offers ?? [];
+			$offers = isset( $body->offers ) ? $body->offers : [];
 			foreach ( $offers as $offer ) {
 				if ( version_compare( $offer->version, '4.0', '>=' ) ) {
 					$offer->response             = 'latest';
@@ -183,7 +183,7 @@ class Core {
 			$transient->updates         = [];
 		}
 		$rollback = get_site_transient( '_core_rollback' );
-		$version  = $rollback['core_dropdown'] ?? '';
+		$version  = isset( $rollback['core_dropdown'] ) ? $rollback['core_dropdown'] : '';
 		$offers   = get_site_transient( '_core_rollback_offers' );
 		$versions = $this->get_core_versions();
 		if ( array_keys( $versions )[0] === $version ) {

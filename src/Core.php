@@ -186,7 +186,7 @@ class Core {
 		$version  = isset( $rollback['core_dropdown'] ) ? $rollback['core_dropdown'] : '';
 		$offers   = get_site_transient( '_core_rollback_offers' );
 		$versions = $this->get_core_versions();
-		if ( array_keys( $versions )[0] === $version ) {
+		if ( ! empty( $versions ) && array_keys( $versions )[0] === $version ) {
 			unset( $transient->updates[1] );
 		}
 		if ( $offers && 'latest' === $offers[1]->response && $version === $offers[1]->version ) {

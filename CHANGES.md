@@ -1,4 +1,5 @@
 [ unreleased ]
+* update guard in `add_rollback_offer()`
 
 #### 1.4.2 / 2026-03-29
 * remove null coalescing so works with PHP 5.6
